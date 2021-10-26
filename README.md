@@ -14,7 +14,7 @@ An id has to be a positive integer, to create an item with a specific id you cre
 Items with special nbt on them are automatically converted when on the ground or in [player inventories](https://github.com/gibbsly/iiid#player-inventories). The nbt formatting to do this is `{iiid:{action:<id>}}`. This is primary useful for [loot tables](https://github.com/gibbsly/iiid/blob/main/data/iiid/loot_tables/example.json) so you can have consistent items across different loot tables without having to maintain all of them.
 
 ## Copy Operations
-If an item id object specifies no `id` or `Count`, or if `id`, tag` or `Count` are `"copy"` some behavior is exhibited.
+If an item id object specifies no `id` or `Count`, or if `id`, `tag` or `Count` are `"copy"` some behavior is exhibited.
 
 For `id` and `Count`, if `"copy"` is specified, or if the values don't exist, the item that had the action value specified will have that values inherited. So for example if the item entity or item in the player inventory has a `Count` of 12, and no `Count` is specified on the id that is being written, the resulting item will have a `Count` of 12.
 
@@ -26,6 +26,8 @@ If the `tag` object is specified to `"copy"` then the copying behavior will occu
 `iiid:summon`: This summons an item with the id corresponding to the `id` score on the `iiid.main` scoreboard on the ground
 
 `iiid:util/generate_item`: This creates an item with the id corresponding to the `id` score on the `iiid.main` scoreboard in the storage `iiid:main item`
+
+`iiid:util/place_item_in_shulker`: This copies the item from the storage `iiid:main item` into slot 0 of the shulker box at `6908260 0 29999999`. this is useful if you need to place an item into a specific slot in a players inventory or into slots of a container with use of the `item` command.
 
 ## Extra Notes
 ### Player Inventories
@@ -41,3 +43,9 @@ To give more than 1 item, you have to set the value to a negative number with th
 The formula for this is `trigger = ( ( id * 100 ) + count ) * -1`. 
 
 So for example -216 gives 16 of the item with id 2
+
+### Containers
+this doesn't touch containers, but I may add that functionality later
+
+### Versioning
+This only modifies an item once, once an item has had it's nbt applied the iiid data is removed.
