@@ -1,0 +1,6 @@
+{
+	"values": [
+		"iiid:example"
+	]
+}
+this function tag can be used to call the functions you want to call, or you can create an iiid namespace in other datapacks with this tag in it to call your functions from within the same pack to prevent cross datapack function calls

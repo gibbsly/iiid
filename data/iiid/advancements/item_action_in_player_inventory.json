@@ -1,0 +1,21 @@
+{
+	"criteria": {
+		"base": {
+			"trigger": "minecraft:location"
+		},
+		"change": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"tag": "iiid:player_inventory_item_action_check",
+						"nbt": "{iiid:{}}"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "iiid:item_action_in_player_inventory"
+	}
+}

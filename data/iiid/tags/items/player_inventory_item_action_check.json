@@ -1,0 +1,6 @@
+{
+	"values": [
+		"minecraft:jigsaw"
+	]
+}
+Items in this tag will always trigger a check of a player's entire inventory, so be sure to only use items that will not be obtained normally for optimization purposes.

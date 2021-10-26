@@ -1,0 +1,9 @@
+execute if score slot= iiid.main matches 09 run item replace entity @s inventory.0 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 10 run item replace entity @s inventory.1 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 11 run item replace entity @s inventory.2 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 12 run item replace entity @s inventory.3 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 13 run item replace entity @s inventory.4 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 14 run item replace entity @s inventory.5 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 15 run item replace entity @s inventory.6 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 16 run item replace entity @s inventory.7 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 17 run item replace entity @s inventory.8 from block 6908260 0 29999999 container.0

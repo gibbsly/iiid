@@ -1,0 +1,3 @@
+#these are example ids, this function is called by the #iiid:util/generate_item function tag
+execute if score id iiid.main matches 1 run data modify storage iiid:main item set value {id:"minecraft:stick",Count:2b,tag:{display:{Name:'"Sticky"'}}}
+execute if score id iiid.main matches 2 run data modify storage iiid:main item set value {id:"minecraft:dead_bush",Count:"copy",tag:{display:{Name:'"Sticker"'}}}

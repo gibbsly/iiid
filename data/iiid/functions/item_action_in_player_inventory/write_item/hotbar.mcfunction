@@ -1,0 +1,9 @@
+execute if score slot= iiid.main matches 0 run item replace entity @s hotbar.0 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 1 run item replace entity @s hotbar.1 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 2 run item replace entity @s hotbar.2 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 3 run item replace entity @s hotbar.3 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 4 run item replace entity @s hotbar.4 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 5 run item replace entity @s hotbar.5 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 6 run item replace entity @s hotbar.6 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 7 run item replace entity @s hotbar.7 from block 6908260 0 29999999 container.0
+execute if score slot= iiid.main matches 8 run item replace entity @s hotbar.8 from block 6908260 0 29999999 container.0
