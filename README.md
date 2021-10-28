@@ -5,7 +5,7 @@ This is a utility that allows you to easily manage items with complicated NBT wi
 ## Use
 
 ### The basics
-This system will automatically convert item entities as well as items in player's inventories from a formatted item into an item specified by an id in a function. You can also give items with one of the [utility functions](https://github.com/gibbsly/iiid#utility-functions) that are provided in this pack. 
+This system will automatically convert item entities, as well as items in containers and player inventories, from a formatted item into an item specified by an id in a function. You can also give items with one of the [utility functions](https://github.com/gibbsly/iiid#utility-functions) that are provided in this pack. 
 
 ### Ids
 An id has to be a positive integer, to create an item with a specific id you create a [function](https://github.com/gibbsly/iiid/blob/main/data/iiid/functions/example.mcfunction) similar to this one, then add that function to the [`#iiid:generate_item`](https://github.com/gibbsly/iiid/blob/main/data/iiid/tags/functions/generate_item.json) function tag. You can add your function to the tag that is provided in this pack, or you can create an `iiid` namespace in your own datapack, with the tag, that calls your function directly. This is generally a better practice due to it avoiding cross-datapack function calls.
@@ -43,9 +43,6 @@ To give more than 1 item, you have to set the value to a negative number with th
 The formula for this is `trigger = ( ( id * 100 ) + count ) * -1`. 
 
 So for example -216 gives 16 of the item with id 2
-
-### Containers
-this doesn't touch containers, but I may add that functionality later
 
 ### Versioning
 This only modifies an item once, once an item has had it's nbt applied the iiid data is removed.
